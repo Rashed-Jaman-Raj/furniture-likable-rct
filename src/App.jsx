@@ -6,6 +6,9 @@ import Footer from './components/Footer';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import Contacts from './pages/contacts/Contacts';
+import Shop from './pages/shop/Shop';
+import About from './pages/about.jsx/About';
+
 
 function App() {
 
@@ -18,6 +21,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/contacts" element={<Contacts />} />
+      <Route path="/shop" element={<Shop />} />
+      <Route path="/about" element={<About />} />
+
     </Routes>
     <Footer />
   </BrowserRouter>
