@@ -3,6 +3,7 @@ import { Link, NavLink} from 'react-router-dom'
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaBars } from "react-icons/fa6";
 import { useState } from 'react';
+import { FaTimes } from "react-icons/fa";
 
 
 
@@ -29,18 +30,31 @@ const Navbar = () => {
           <div>
             {/* Hamburger mobile menu */}
         <div onClick={toggleMenu} className='md:hidden text-xl cursor-pointer hover:text-red-400 '>
-          {
-            isMenuOpen ? <p>X</p> : <FaBars />
-          }
-          
+        <FaBars />
         </div>
 
 
 
-         {/* Shopping Cart icon  */}
+          {/* Shopping Cart icon  */}
             <NavLink to= "/cart" className={ 'hidden md:block cursor-pointer relative' }>  <AiOutlineShoppingCart  className='text-xl'/> <sup className='absolute top-0 -right-4 bg-amber-500 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs'> 0 </sup> </NavLink>
           </div>
 
+
+          {/* Mobile Menu Item  */}
+          {/* inset-0 = full inside measurement */}
+          <div className={` fixed inset-0 items-center justify-center gap-8 text-lg pt-20 md:hidden   text-white bg-black/80 transition-all duration-300 ${isMenuOpen ? 'translate-x-0'  : '-translate-x-full'} `}>
+            <div onClick={toggleMenu} className='absolute top-5 right-5 text-2xl cursor-pointer'>
+              <FaTimes />
+            </div>
+
+            {/* Wrap all links in one clickable container */}
+            <div onClick={toggleMenu} className='flex flex-col items-center gap-8'>
+              <NavLink to= "/" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-yellow-400"}> Home </NavLink>
+            <NavLink to= "/shop" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-yellow-400"}> Shop </NavLink>
+            <NavLink to= "/contacts" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-yellow-400"}> Contact </NavLink>
+            <NavLink to= "/about" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-yellow-400"}> About </NavLink>
+            </div>
+          </div>
       </nav>
     </header>
   )
