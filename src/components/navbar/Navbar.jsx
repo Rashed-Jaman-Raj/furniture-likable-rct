@@ -42,7 +42,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Item  */}
           {/* inset-0 = full inside measurement */}
-          <div className={` fixed inset-0 items-center justify-center gap-8 text-lg pt-20 md:hidden   text-white bg-black/80 transition-all duration-300 ${isMenuOpen ? 'translate-x-0'  : '-translate-x-full'} `}>
+          <div className={` fixed inset-0 items-center justify-center gap-8 text-lg pt-20 md:hidden   text-white bg-black/83 transition-all duration-300 ${isMenuOpen ? 'translate-x-0'  : '-translate-x-full'} `}>
             <div onClick={toggleMenu} className='absolute top-5 right-5 text-2xl cursor-pointer'>
               <FaTimes />
             </div>
