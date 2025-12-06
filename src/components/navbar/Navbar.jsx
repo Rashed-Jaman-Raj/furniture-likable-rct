@@ -14,9 +14,9 @@ const Navbar = () => {
       setIsMenuOpen(prevState => !prevState)
    }
   return (
-    <header>
-      <nav className='max-w-screen-2x1 container mx-auto flex justify-between items-center py-6 px-3 md:px-8 lg:px-12'>
-         <Link to= "/" className='font-stretch-expanded'> RAJ FURNITURE </Link>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ease-in-out text-white `}>
+      <nav className='max-w-screen-2x1 container mx-auto flex justify-between items-center py-4 px-3 md:px-8 lg:px-12'>
+         <Link to= "/" className='font-mono'> RAJ FURNITURE </Link>
 
          {/* Desktop menu item */}
          <div className='md:flex lg:flex hidden justify-center items-center container sm:gap-4 md:gap-6 lg:gap-12'>
