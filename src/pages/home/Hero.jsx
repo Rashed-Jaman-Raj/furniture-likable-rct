@@ -1,6 +1,8 @@
 import React from 'react'
 import bannerImg from "../../assets/banner.png"
 import { FaSearch } from 'react-icons/fa'
+import TooltipButton from '../../components/TooltipButton'
+
 
 const Hero = () => {
   return (
@@ -20,23 +22,23 @@ const Hero = () => {
       </div>
 
         {/* bottom blue effect */}
-        <div className= 'absolute inset-x-0 bottom-0 h-2/3 -mb-2 bg-gradient-to-t from-white via-transparent to-transparent blur-sm blur-lg '>
+        <div className= 'absolute inset-x-0 bottom-0 h-1/3 -mb-2 bg-gradient-to-t from-white via-transparent to-transparent blur-sm blur-lg '>
         </div>
 
         {/* Hover button for display tooltip box */}
-        <div className=' absolute top-116 left-15 group '>
-          <button className=' relative p-3 bg-white/25 rounded-full border border-1 bg-white text-xl cursor-pointer  '>
-            <div className=' hidden absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 p-1 space-x-1 rounded-lg bg-white/25 shadow-md group-hover:flex '>
-              <div className=' size-4 bg-red-700 border-white rounded-full '/> 
-              <div className=' size-4 bg-green-700 border-white rounded-full '/> 
-              <div className=' size-4 bg-yellow-500 border-white rounded-full '/> 
+        
 
-              {/* {tooltip arrow} */}
-              <div className=' absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-0 h-0 border-1-8 border-1-transparent border-r-8 border-r-transparent border-t-8 border-t-white/35  ' >
-                
-              </div>
-            </div>
-          </button>
+        <div className='hidden xl:block absolute top-116 left-15 '>
+          <TooltipButton  position="bottom"/> 
+        </div>
+        <div className='hidden xl:block absolute top-110 left-59'>
+          <TooltipButton  position="bottom"/> 
+        </div>
+        <div className='hidden xl:block absolute top-127 left-176'>
+          <TooltipButton  position="bottom"/> 
+        </div>
+        <div className='hidden xl:block absolute top-132 left-297'>
+          <TooltipButton  position="bottom"/> 
         </div>
     </section>
   )

@@ -4,13 +4,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.section-container {
+  @layer max-w-screen-2xl container mx-auto py-4 px-3 ;
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
+@apply max-w-screen-2xl container mx-auto py-4 px-3 ;
 .logo {
   height: 6em;
   padding: 1.5em;
