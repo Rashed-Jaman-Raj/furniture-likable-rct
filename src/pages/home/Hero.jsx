@@ -22,8 +22,8 @@ const Hero = () => {
       </div>
 
         {/* bottom blue effect */}
-        <div className= 'absolute inset-x-0 bottom-0 h-1/3 -mb-2 bg-gradient-to-t from-white via-transparent to-transparent blur-sm blur-lg '>
-        </div>
+        <div className= 'absolute inset-x-0 bottom-0 h-3/4 -mb-4 bg-gradient-to-t from-white via-transparent to-transparent blur-sm '/>
+        
 
         {/* Hover button for display tooltip box */}
         
