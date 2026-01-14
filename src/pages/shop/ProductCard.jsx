@@ -5,7 +5,7 @@ import { FiPlus } from "react-icons/fi";
 
 const ProductCard = ({product}) => {
   return (
-    <div className='border border-gray-300 rounded-md hover:shadow-lg duration-200 overflow-hidden'>
+    <div className='border border-gray-300 rounded-md hover:shadow-black/35 hover:shadow-lg duration-200 overflow-hidden'>
       <div className='hover:scale-104 duration-200 cursor-pointer'>
         <img src={getImgUrl(`${product.imageUrl}`)} alt="" />
       </div>
