@@ -11,32 +11,32 @@
     
     export const reviews = [
         {
-            name: 'John Doe',
+            name: 'Rashed Jaman Raj',
             review: 'Panto made my room feel more alive and minimalist. Highly recommend!',
             image: reviewer1,
             coverImg: testimonialBG1,
-            rating: 4,
+            rating: 5,
         },
         {
             name: 'Jane Smith',
             review: 'Great designs and superb service! I love my new living space.',
             image: reviewer2,
             coverImg: testimonialBG2,
-            rating: 5,
+            rating: 4,
         },
         {
             name: 'Michael Brown',
             review: 'Very easy to work with. Turned my home into a cozy, modern sanctuary!',
             image: reviewer3,
             coverImg: testimonialBG3,
-            rating: 4,
+            rating: 3,
         },
         {
-            name: 'Michael Brown',
+            name: 'Rashed Jaman Raj',
             review: 'Very easy to work with. Turned my home into a cozy, modern sanctuary!',
             image: reviewer1,
             coverImg: testimonialBG1,
-            rating: 3,
+            rating: 4,
         },
         {
             name: 'Michael Brown',

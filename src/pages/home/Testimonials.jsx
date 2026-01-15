@@ -8,10 +8,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+
 import { reviews } from "../../utils/reviews";
 import Rating from "../../components/navbar/Rating";
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const Testimonials = () => {
@@ -28,6 +28,12 @@ const Testimonials = () => {
 
       {/* review card */}
       <Swiper
+ 
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         slidesPerView={1}
         spaceBetween={10}
         pagination={{
@@ -48,7 +54,7 @@ const Testimonials = () => {
             spaceBetween: 20,
           },
         }}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         {reviews.map((reviews, index) => (
