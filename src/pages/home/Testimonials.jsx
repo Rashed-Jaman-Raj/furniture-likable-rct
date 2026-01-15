@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import { reviews } from "../../utils/reviews";
 import Rating from "../../components/navbar/Rating";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Footer from "../../components/Footer";
 
 
 const Testimonials = () => {

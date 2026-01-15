@@ -16,7 +16,7 @@ body {
 .swiper-button-prev {
   color: #facc15; /* Tailwind's yellow-400 */
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 8px;
   border-radius: 50px;
   transition: background-color 0.3s ease;
 }
@@ -26,6 +26,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   overflow: hidden;
+  padding: 8px;
 }
 
 /* .swiper-button-prev:after,

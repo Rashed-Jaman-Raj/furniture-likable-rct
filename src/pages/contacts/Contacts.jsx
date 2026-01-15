@@ -2,7 +2,8 @@ import React from 'react'
 
 const Contacts = () => {
   return (
-    <div>
+
+    <div className='min-h-screen'>
       Contacts
     </div>
   )
