@@ -7,6 +7,7 @@ export const products = [
     price: 99,
     imageUrl: "chair-1.png",
     rating: 5,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ export const products = [
     price: 129,
     imageUrl: "chair-2.png",
     rating: 4,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ export const products = [
     price: 149,
     imageUrl: "chair-3.png",
     rating: 3,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 4,
@@ -31,6 +34,7 @@ export const products = [
     price: 199,
     imageUrl: "chair-4.png",
     rating: 4,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 5,
@@ -39,6 +43,7 @@ export const products = [
     price: 89,
     imageUrl: "chair-5.png",
     rating: 4.5,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
 
   // Beds
@@ -49,6 +54,7 @@ export const products = [
     price: 299,
     imageUrl: "beds-1.png",
     rating: 5,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 7,
@@ -57,6 +63,7 @@ export const products = [
     price: 249,
     imageUrl: "beds-2.png",
     rating: 5,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 8,
@@ -65,6 +72,7 @@ export const products = [
     price: 399,
     imageUrl: "beds-3.png",
     rating: 3,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 9,
@@ -73,6 +81,7 @@ export const products = [
     price: 349,
     imageUrl: "beds-4.png",
     rating: 2,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 10,
@@ -81,6 +90,7 @@ export const products = [
     price: 459,
     imageUrl: "beds-5.png",
     rating: 5,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
 
   // Sofas
@@ -91,6 +101,7 @@ export const products = [
     price: 499,
     imageUrl: "sofa-1.png",
     rating: 4,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 12,
@@ -99,6 +110,7 @@ export const products = [
     price: 399,
     imageUrl: "sofa-2.png",
     rating: 5,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 13,
@@ -107,6 +119,7 @@ export const products = [
     price: 699,
     imageUrl: "sofa-3.png",
     rating: 4,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 14,
@@ -115,6 +128,7 @@ export const products = [
     price: 549,
     imageUrl: "sofa-4.png",
     rating: 5,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 15,
@@ -123,6 +137,7 @@ export const products = [
     price: 799,
     imageUrl: "sofa-5.png",
     rating: 3.6,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
 
   // Lamps
@@ -133,6 +148,7 @@ export const products = [
     price: 49,
     imageUrl: "lamp-1.png",
     rating: 5,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 17,
@@ -141,6 +157,7 @@ export const products = [
     price: 59,
     imageUrl: "lamp-2.png",
     rating: 4,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 18,
@@ -149,6 +166,7 @@ export const products = [
     price: 69,
     imageUrl: "lamp-3.png",
     rating: 3,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 19,
@@ -157,6 +175,7 @@ export const products = [
     price: 89,
     imageUrl: "lamp-4.png",
     rating: 5,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
   {
     id: 20,
@@ -165,5 +184,6 @@ export const products = [
     price: 79,
     imageUrl: "lamp-6.png",
     rating: 4,
+    Description: "At Raj Furniture is offering get the worlds best and most famous products for your home/office. Customer preference is our main goal. We are always committed to providing the best quality furniture.",
   },
 ];

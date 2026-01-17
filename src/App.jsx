@@ -8,6 +8,8 @@ import Contacts from "./pages/contacts/Contacts";
 import Shop from "./pages/shop/Shop";
 import About from "./pages/about.jsx/About";
 import { Outlet } from "react-router-dom";
+import ProductDetails from "./pages/shop/ProductDetail";
+import ProductDetil from "./pages/shop/ProductDetil";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
+          {/* <Route path="/product/:id" element={<ProductDetails />} /> */}
+
+          <Route path="/product/:id" element={<ProductDetil />} />
         </Routes>
 
         <main>
