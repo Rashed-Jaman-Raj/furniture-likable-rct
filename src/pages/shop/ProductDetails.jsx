@@ -4,9 +4,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../utils/Products";
-import { getImgUrl } from "../../utils/getImageUrl";
 import Rating from "../../components/navbar/Rating";
 import detailBannerImg from "../../assets/products/productdetailimg.png"
+import { getImgUrl } from "../../utils/getImageURL";
+import { useCart } from "./CartContext";
+import { toast } from "react-toastify";
+import { BsCartPlus } from "react-icons/bs";
 
 // Replace this with your actual background image path or import
 const backgroundImageUrl = "/assets/your-background-image.jpg"; // Update this path
@@ -18,6 +21,8 @@ const ProductDetails = () => {
   if (!product) {
     return <div className="p-10 text-center text-xl">Product not found.</div>;
   }
+
+  const {addToCart} = useCart();
 
   return (
     <div
@@ -43,8 +48,15 @@ const ProductDetails = () => {
             <p className="text-2xl font-bold text-gray-900 mt-4">
               <sup>$</sup> {product.price}
             </p>
-            <button className="mt-6 bg-gray-950 text-white hover:bg-black/55 px-6 py-2 rounded-md">
-              Add to Cart
+            <button 
+            onClick={(e) => {
+            addToCart(product);
+            e.stopPropagation();
+            e.preventDefault();
+            toast.success(`${product.name} successfully added to your cart!`);
+            }}
+            className="mt-6 bg-gray-950 text-white hover:bg-black/55 px-8 py-2 rounded-md ">
+              Add to Cart 
             </button>
           </div>
         </div>

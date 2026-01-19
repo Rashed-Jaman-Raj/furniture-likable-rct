@@ -1,9 +1,9 @@
 import React from "react";
 import expriencesImg from "../../assets/expricences.png";
 import Button from "../../components/Button";
-import materialsImg1 from "../../assets/material1.png"
-import materialsImg2 from "../../assets/material2.png"
-import materialsImg3 from "../../assets/material3.png"
+import materialsImg1 from "../../assets/material1.png";
+import materialsImg2 from "../../assets/material2.png";
+import materialsImg3 from "../../assets/material3.png";
 
 
 const Materials = () => {

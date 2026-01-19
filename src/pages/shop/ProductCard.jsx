@@ -1,10 +1,15 @@
 import React from "react";
-import { getImgUrl } from "../../utils/getImageUrl";
+import { getImgUrl } from "../../utils/getImageURL";
 import Rating from "../../components/navbar/Rating";
 import { BsCartPlus } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useCart } from "../shop/CartContext";
+import { toast } from "react-toastify";
+
 
 const ProductCard = ({ product }) => {
+  const {addToCart} = useCart();
+
   return (
     <div className="border border-gray-300 rounded-md hover:shadow-black/35 hover:shadow-lg duration-200 overflow-hidden">
       <Link to={`/product/${product.id}`}>
@@ -23,7 +28,15 @@ const ProductCard = ({ product }) => {
           <p className="text-gray-950 font-bold text-lg">
             <sup>$</sup> <span>{product.price}</span>
           </p>
-          <button className="bg-gray-600 text-white focus-within: hover:bg-black p-2 rounded-full font-bold text-xl cursor-pointer">
+          <button 
+          onClick={(e) => {
+              e.stopPropagation();
+              e.preventDefault();
+              addToCart(product);
+              toast.success(`${product.name} successfully added to your cart!`);
+            }}
+
+          className='bg-black/70 text-white p-2 rounded-full items-center cursor-pointer hover:bg-black'>
             <BsCartPlus />
           </button>
         </div>

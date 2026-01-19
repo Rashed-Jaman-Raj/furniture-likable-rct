@@ -4,10 +4,14 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaBars } from "react-icons/fa6";
 import { useEffect, useState } from 'react';
 import { FaTimes } from "react-icons/fa";
+import { useCart } from '../../pages/shop/CartContext';
+
 
 
 
 const Navbar = () => {
+  const {cartItems} = useCart();
+
    const [isMenuOpen, setIsMenuOpen] = useState(false)
    const [isScrolled, setIsScrolled] = useState(false)
 
@@ -52,7 +56,7 @@ const Navbar = () => {
 
 
           {/* Shopping Cart icon  */}
-            <NavLink to= "/cart" className={ 'hidden md:block cursor-pointer relative' }>  <AiOutlineShoppingCart  className='text-xl'/> <sup className='absolute top-0 -right-4 bg-amber-500 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs'> 0 </sup> </NavLink>
+            <NavLink to= "/cart" className={ 'hidden md:block cursor-pointer relative' }>  <AiOutlineShoppingCart  className='text-2xl'/> <sup className='absolute top-0 -right-4 bg-amber-500 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs'>{cartItems.length}</sup> </NavLink>
           </div>
 
 

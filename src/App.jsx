@@ -8,12 +8,16 @@ import Contacts from "./pages/contacts/Contacts";
 import Shop from "./pages/shop/Shop";
 import About from "./pages/about.jsx/About";
 import { Outlet } from "react-router-dom";
-import ProductDetails from "./pages/shop/ProductDetail";
-import ProductDetil from "./pages/shop/ProductDetil";
+// import ProductDetil from "./pages/shop/ProductDetail";
+import { CartProvider } from "./pages/shop/CartContext";
+import Cart from "./pages/shop/Cart";
+import ProductCard from "./pages/shop/ProductCard";
+import ProductDetails from "./pages/shop/ProductDetails";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
-    <div>
+    <CartProvider>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -21,17 +25,21 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/product/:id" element={<ProductDetails />} /> */}
-
-          <Route path="/product/:id" element={<ProductDetil />} />
+    
+          <Route path="/cart" element={<Cart />} />
+          {/* <Route path="/product/:id" element={<ProductDetail />} /> */}
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/product/:id" element={<ProductCard />} />
         </Routes>
 
         <main>
           <Outlet />
         </main>
         <Footer />
+
+        <ToastContainer position='top-right' autoClose={1200} />
       </BrowserRouter>
-    </div>
+    </CartProvider>
   );
 }
 
