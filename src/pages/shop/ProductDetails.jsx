@@ -10,6 +10,7 @@ import { getImgUrl } from "../../utils/getImageURL";
 import { useCart } from "./CartContext";
 import { toast } from "react-toastify";
 import { BsCartPlus } from "react-icons/bs";
+import { FaCartPlus } from "react-icons/fa";
 
 // Replace this with your actual background image path or import
 const backgroundImageUrl = "/assets/your-background-image.jpg"; // Update this path
@@ -26,10 +27,10 @@ const ProductDetails = () => {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat"
+      className=" pt-20 h-screen relative bg-cover bg-center text-white bg-no-repeat"
       style={{ backgroundImage: `url(${detailBannerImg})` }}
     >
-      <div className="bg-white/80 backdrop-blur-sm max-w-4xl mx-auto p-6 rounded-lg shadow-lg mt-10">
+      <div className="bg-white/80 backdrop-blur-sm max-w-4xl mx-auto p-6 rounded-lg shadow-lg  ">
         <div className="flex flex-col md:flex-row gap-10">
           {/* Product Image */}
           <div className="flex-1">
@@ -42,12 +43,13 @@ const ProductDetails = () => {
 
           {/* Product Info */}
           <div className="flex-1">
-            <h2 className="text-3xl font-bold mb-2">{product.name}</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">{product.name}</h2>
             <p className="text-gray-600 mb-1">Category: {product.category}</p>
             <Rating rating={product.rating} />
             <p className="text-2xl font-bold text-gray-900 mt-4">
               <sup>$</sup> {product.price}
             </p>
+            <p className=" mt-4 text-gray-800">{product.Description}</p>
             <button 
             onClick={(e) => {
             addToCart(product);
@@ -55,7 +57,8 @@ const ProductDetails = () => {
             e.preventDefault();
             toast.success(`${product.name} successfully added to your cart!`);
             }}
-            className="mt-6 bg-gray-950 text-white hover:bg-black/55 px-8 py-2 rounded-md ">
+            className="flex justify-between items-center gap-3 mt-10 bg-gray-950 text-white hover:bg-green-800 px-35 py-2 rounded-md cursor-pointer ">
+              <FaCartPlus />
               Add to Cart 
             </button>
           </div>

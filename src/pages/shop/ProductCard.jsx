@@ -36,7 +36,7 @@ const ProductCard = ({ product }) => {
               toast.success(`${product.name} successfully added to your cart!`);
             }}
 
-          className='bg-black/70 text-white p-2 rounded-full items-center cursor-pointer hover:bg-black'>
+          className='bg-black/70 text-white p-2 rounded-full items-center cursor-pointer hover:bg-green-700'>
             <BsCartPlus />
           </button>
         </div>

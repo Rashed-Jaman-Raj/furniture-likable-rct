@@ -64,7 +64,7 @@ const Testimonials = () => {
             className=" bg-no-repeat bg-cover rounded-lg"
             style={{ backgroundImage: `url(${reviews.coverImg})` }}
           >
-            <div className=" md:h-[547px] flex justify-center items-center mb-4">
+            <div className=" md:h-136 flex justify-center items-center mb-4">
               <div className="mt-16 mb-5 bg-white border rounded-xl md:w-4/5 w-full p-4 relative">
                 <img src={reviews.image} alt="" className=" size-20 absolute -top-10 ring-2 ring-amber-500 rounded-full object-cover left-1/2 -translate-x-1/2"/>
                 <div className=" mt-16 text-center">

@@ -12,8 +12,8 @@ const Cart = () => {
 
 
   return (
-    <div className='max-w-screen-2x1 container mx-auto py-30 p-4 mt-0 bg-gray-500 text-gray-600 min-h-screen' style={{backgroundImage: `Url(${detailBannerImg})`}}>
-      <h2 className=' text-2xl font-semibold mb-8 text-gray-600 border-b-2'>Your Cart</h2>
+    <div className='max-w-screen-2x1 bg-center bg-cover container mx-auto py-30 p-4 mt-0 bg-gray-500 text-gray-600 min-h-screen' style={{backgroundImage: `Url(${detailBannerImg})`}}>
+      <h2 className=' text-2xl font-semibold mb-8 text-gray-700 border-b-2'>Your Cart</h2>
       <div>
         {cartItems.length === 0 ? (<p className=' text-lg text-white'>Your Cart is empty.</p>) : (
           <>
