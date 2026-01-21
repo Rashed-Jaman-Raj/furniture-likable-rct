@@ -36,12 +36,13 @@ const Navbar = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ease-in-out ${isScrolled ? "bg-white shadow-md" : "bg-transparent text-white"} `}>
       <nav className='max-w-screen-2x1 container mx-auto flex justify-between items-center py-4 px-3 md:px-8 lg:px-12'>
-         <Link to= "/" className='text-2xl font-bold text-amber-500  whitespace-nowrap'> Raj Furniture </Link>
+         <Link to= "/" className='text-2xl font-bold text-rose-600  whitespace-nowrap'> Raj Furniture </Link>
 
          {/* Desktop menu item */}
          <div className='md:flex lg:flex hidden justify-center items-center container sm:gap-4 md:gap-6 lg:gap-12'>
             <NavLink to= "/" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-red-400"}> Home </NavLink>
             <NavLink to= "/shop" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-red-400"}> Shop </NavLink>
+            <NavLink to= "/newarrival" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-red-400"}> New Arrival </NavLink>
             <NavLink to= "/contacts" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-red-400"}> Contact </NavLink>
             <NavLink to= "/about" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-red-400"}> About </NavLink>
          </div>
