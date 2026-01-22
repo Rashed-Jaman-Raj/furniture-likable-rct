@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 import btnIcon from "../../assets/button-icon.png"
 
 const Products = ({ headline }) => {
-  const categories = ["Chair", "Beds", "Sofa", "Lamp"];
+  const categories = ["Chair", "Beds", "Sofa", "New-Arrival", "Lamp"];
   const [selectedCategory, setSelectedCategory] = useState("Chair");
   const [visibleProducts, setVisibleProducts] = useState(4);
   const filteredProducts = products.filter(
@@ -19,8 +19,8 @@ const Products = ({ headline }) => {
         <h2 className="text-4xl font-bold text-center my-8 ">{headline}</h2>
 
         {/* category tabs */}
-        <div className="bg-[#EEEEEE] max-w-md mx-auto sm:rounded-full md-p-2.5 py-2 px-2 mb-16 ">
-          <div className="flex flex-col sm:flex-row items-center md:justify-between justify-center gap-4">
+        <div className="bg-[#EEEEEE] max-w-2/4 mx-auto sm:rounded-full md-p-2.5 px-1 py-3 mb-16 whitespace-nowrap ">
+          <div className="flex flex-col sm:flex-row items-center  md:justify-between justify-center gap-1.2 ">
             {categories.map((category) => (
               <button
                 onClick={() => {
@@ -28,7 +28,7 @@ const Products = ({ headline }) => {
                   setVisibleProducts(4);
                 }}
                 key={category}
-                className={`py-1.5 sm:px-5 px-8 rounded-full hover:bg-amber-500 hover:text-white transition-colors cursor-pointer ${
+                className={`py-1.5 sm:px-5 mx-auto rounded-full hover:bg-amber-500 hover:text-white transition-colors cursor-pointer ${
                   selectedCategory === category
                     ? "bg-white text-amber-500"
                     : " text-black"
@@ -42,7 +42,7 @@ const Products = ({ headline }) => {
 
         <div>
           {/* products grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-screen-2x1 container mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-screen-2x1 container ">
             {filteredProducts
               .slice(0, visibleProducts)
               .map((product, index) => (
