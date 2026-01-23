@@ -58,6 +58,7 @@ const Products = ({ headline }) => {
                 View All
                 <img src={btnIcon} alt="btn icon" />
               </button>
+              
             </div>
           )}
         </div>
