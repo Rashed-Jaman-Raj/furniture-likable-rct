@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import detailBannerImg from "../../assets/about.png";
 import { products } from "../../utils/Products";
