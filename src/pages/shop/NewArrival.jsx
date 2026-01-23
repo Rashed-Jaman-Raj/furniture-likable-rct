@@ -5,7 +5,7 @@ import { products } from "../../utils/Products";
 import ProductCard from "./ProductCard";
 import btnIcon from "../../assets/button-icon.png";
 
-const Products = ({ headline }) => {
+const NewArrival = ({ headline }) => {
   const [visibleProducts, setVisibleProducts] = useState(4);
 
   // Filter only New Arrival products
@@ -56,4 +56,4 @@ const Products = ({ headline }) => {
   );
 };
 
-export default Products;
+export default NewArrival;
