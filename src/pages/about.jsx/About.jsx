@@ -6,7 +6,7 @@ import { Link, NavLink} from 'react-router-dom'
 
 const About = () => {
   return (
-    <div className='min-h-screen max-w-screen-2x1 mx-auto'>
+    <div className='w-full min-h-screen max-w-screen-2x1 mx-auto'>
       <div className=' w-full  h-90 bg-cover bg-center flex items-center justify-center text-white' style={{backgroundImage: `Url(${detailBannerImg})`}}>                          
       </div>
 
