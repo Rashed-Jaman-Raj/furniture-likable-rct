@@ -10,8 +10,8 @@ const About = () => {
       <div className=' w-full  h-90 bg-cover bg-center flex items-center justify-center text-white' style={{backgroundImage: `Url(${detailBannerImg})`}}>                          
       </div>
 
-      <h2 className=' text-3xl items-center mt-20 justify-center text-center ml-10 font-semibold mb-4 border-b border-gray-300 '> About Us</h2>
-      <div className=' flex flex-col md:flex-row px-10 mt-5 gap-40 mx-30'>
+      <h2 className=' text-3xl items-center mt-20 justify-center text-center ml-5 mr-5 font-semibold mb-4 border-b border-gray-300 '> About Us</h2>
+      <div className=' flex flex-col md:px-10 md:flex-row mt-5 px-5 gap-40 md:mx-30'>
         <div className=' flex-2'>
             <p className='  mb-2 font-semibold  mt-2'>We start our journey from 2014.We are the first and top Furniture shop in Bangladesh. Raj Furniture offers a unique selection of stylish, contemporary, and chic furniture online. Our online furniture range includes sofas, beds, dining tables, Chair, Lamp, TV units, wardrobes, dressing tables, and lots more.</p>
             <p className=' font-semibold mt-4'>All our wooden furniture designs are available online at <NavLink to= "/" className=" text-blue-600 hover:text-red-400"> www.rajfurniture.com </NavLink> On our portal. you can browse as many furniture designs across categories as you like, sort and filter, compare options, easily select and buy the ones you like, and stay updated about new and contemporary designs.</p>

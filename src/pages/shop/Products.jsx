@@ -19,7 +19,7 @@ const Products = ({ headline }) => {
         <h2 className="text-4xl font-bold text-center my-8 ">{headline}</h2>
 
         {/* category tabs */}
-        <div className="bg-[#EEEEEE] max-w-2/4 mx-auto sm:rounded-full md-p-2.5 px-1 py-3 mb-16 whitespace-nowrap ">
+        <div className="bg-[#EEEEEE] max-w-full md:max-w-2/4 mx-auto sm:rounded-full md-p-2.5 px-1 py-3 mb-16 whitespace-nowrap ">
           <div className="flex flex-col sm:flex-row items-center  md:justify-between justify-center gap-1.2 ">
             {categories.map((category) => (
               <button
