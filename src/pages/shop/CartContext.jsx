@@ -10,7 +10,7 @@ export const useCart = ()=> useContext(CartContext);
 
 export const CartProvider = ({children}) => {
   const [cartItems, setCartItems] = useState(() => {
-    const storedCart = localStorage.getItem('cartItem');
+    const storedCart = localStorage.getItem('cartItems');
     return storedCart ? JSON.parse(storedCart) : [];
   });
 
@@ -30,6 +30,9 @@ export const CartProvider = ({children}) => {
         return [ ...prev, { ...product, quantity: 1
         }];
       }
+
+
+
     });
   };
 
@@ -51,10 +54,17 @@ export const CartProvider = ({children}) => {
   };
 
 
+    const clearCart = () => {
+    setCartItems([]);
+  };
+
+
   return (
     <CartContext.Provider value = 
-    {{cartItems, addToCart, removeFromCart, updateQuantity}}>
+    {{cartItems, addToCart, removeFromCart, updateQuantity, clearCart}}>
       {children}
     </CartContext.Provider>
   );
 };
+
+

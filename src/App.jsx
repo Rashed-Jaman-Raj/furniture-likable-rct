@@ -15,6 +15,7 @@ import ProductCard from "./pages/shop/ProductCard";
 import ProductDetails from "./pages/shop/ProductDetails";
 import { ToastContainer } from "react-toastify";
 import NewArrival from "./pages/shop/NewArrival";
+import Checkout from "./pages/shop/CheckOut";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/newarrival" element={<NewArrival />} />
           <Route path="/about" element={<About />} />
-    
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/product/:id" element={<ProductCard />} />

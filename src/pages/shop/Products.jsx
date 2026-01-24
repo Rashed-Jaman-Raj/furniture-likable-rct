@@ -55,7 +55,7 @@ const Products = ({ headline }) => {
               <button 
                onClick={loadMoreProducts}
               className="text-base font-semibold text-amber-500 flex items-center cursor-pointer">
-                View All
+                View More
                 <img src={btnIcon} alt="btn icon" />
               </button>
               

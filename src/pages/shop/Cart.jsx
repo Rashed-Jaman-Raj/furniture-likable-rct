@@ -3,6 +3,7 @@ import { useCart } from './CartContext'
 import { FaPlus, FaMinus, FaTrashAlt } from 'react-icons/fa';
 import { getImgUrl } from "../../utils/getImageURL";
 import detailBannerImg from "../../assets/products/productdetailimg.png"
+import { Link } from 'react-router-dom';
 
   
 
@@ -13,7 +14,7 @@ const Cart = () => {
 
   return (
     <div className='max-w-screen-2x1 bg-center bg-cover container mx-auto py-30 p-4 mt-0 bg-gray-500 text-gray-600 min-h-screen' style={{backgroundImage: `Url(${detailBannerImg})`}}>
-      <h2 className=' text-2xl font-semibold mb-8 text-gray-700 border-b-2'>Your Cart</h2>
+      <h2 className=' text-2xl font-semibold mb-8 text-white border-b-2'>Your Cart</h2>
       <div>
         {cartItems.length === 0 ? (<p className=' text-lg text-white'>Your Cart is empty.</p>) : (
           <>
@@ -45,7 +46,9 @@ const Cart = () => {
 
             <div className='text-right mt-6'>
               <h3 className='text-1xl font-semibold text-white'>Total: ${totalPrice}</h3>
-              <button className='mt-4 px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 cursor-pointer'>Proceed to Checkout</button>
+              <Link to="/checkout">
+              <button className='mt-4 px-6 py-2 bg-yellow-500 text-white rounded hover:bg-green-600 cursor-pointer'>Proceed to Checkout</button>
+              </Link>
             </div>
           </>
         )}
