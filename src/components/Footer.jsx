@@ -14,7 +14,7 @@ const Footer = () => {
 
         {/* logo and deatils*/}
         <div className=' md:col-span-2'>
-          <h2 className='text-2xl font-bold text-rose-600 mb-4'> Raj Furniture<Link to="/"></Link> </h2>
+          <Link to="/"><h2 className='text-2xl font-bold text-rose-600 mb-4'> Raj Furniture</h2></Link> 
           <p className=' md:mr-12'>Your Company is dedicated to providing the best quality products to enhance your home and lifestyle. We combine style and comfort to transform your living spaces into modern sanctuaries.</p>
         </div>
         {/* services div */}

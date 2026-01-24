@@ -72,8 +72,11 @@ const Navbar = () => {
             <div onClick={toggleMenu} className='flex flex-col items-center gap-8'>
               <NavLink to= "/" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-yellow-400"}> Home </NavLink>
             <NavLink to= "/shop" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-yellow-400"}> Shop </NavLink>
+            <NavLink to= "/newarrival" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-yellow-400"}> New Arrival </NavLink>
             <NavLink to= "/contacts" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-yellow-400"}> Contact </NavLink>
             <NavLink to= "/about" className={({ isActive }) => isActive ? "text-red-400 font-medium underline" : "hover:text-yellow-400"}> About </NavLink>
+
+            <NavLink to= "/cart" className={ 'cursor-pointer relative' }>  <AiOutlineShoppingCart  className='text-2xl'/> <sup className='absolute top-0 -right-4 bg-amber-500 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs'>{cartItems.length}</sup> </NavLink>
             </div>
           </div>
       </nav>

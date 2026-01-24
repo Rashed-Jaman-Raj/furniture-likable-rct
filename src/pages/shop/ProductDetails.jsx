@@ -57,7 +57,7 @@ const ProductDetails = () => {
             e.preventDefault();
             toast.success(`${product.name} successfully added to your cart!`);
             }}
-            className="flex justify-between items-center gap-3 mt-10 bg-gray-950 text-white hover:bg-green-800 px-35 py-2 rounded-md cursor-pointer ">
+            className="flex justify-between items-center sm:justify-center gap-3 mt-10 bg-gray-950 text-white hover:bg-green-800 px-5 md:px-35 py-2 rounded-md cursor-pointer ">
               <FaCartPlus />
               Add to Cart 
             </button>
