@@ -20,7 +20,7 @@ const ProductDetails = () => {
   const product = products.find((p) => p.id === parseInt(id));
 
   if (!product) {
-    return <div className="p-10 text-center text-xl">Product not found.</div>;
+    return <div className="p-10 sm:p-5 text-center text-xl">Product not found.</div>;
   }
 
   const {addToCart} = useCart();
@@ -30,7 +30,7 @@ const ProductDetails = () => {
       className=" pt-20 h-screen relative bg-cover bg-center text-white bg-no-repeat"
       style={{ backgroundImage: `url(${detailBannerImg})` }}
     >
-      <div className="bg-white/80 backdrop-blur-sm max-w-4xl mx-auto p-6 rounded-lg shadow-lg  ">
+      <div className="bg-white/80 backdrop-blur-sm max-w-4xl mx-auto p-6 sm:p-3 rounded-lg shadow-lg  ">
         <div className="flex flex-col md:flex-row gap-10">
           {/* Product Image */}
           <div className="flex-1">

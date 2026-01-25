@@ -14,7 +14,7 @@ const Products = ({ headline }) => {
     setVisibleProducts((prev) => prev + 4);
   };
   return (
-    <div className="px-12">
+    <div className="md:px-12 px-5">
       <div className="max-w-screen-2x1 mx-auto">
         <h2 className="text-4xl font-bold text-center my-8 ">{headline}</h2>
 
@@ -28,7 +28,7 @@ const Products = ({ headline }) => {
                   setVisibleProducts(4);
                 }}
                 key={category}
-                className={`py-1.5 sm:px-5 mx-auto rounded-full hover:bg-amber-500 hover:text-white transition-colors cursor-pointer ${
+                className={`py-1.5 px-5 mx-auto rounded-full hover:bg-amber-500 hover:text-white transition-colors cursor-pointer ${
                   selectedCategory === category
                     ? "bg-white text-amber-500"
                     : " text-black"

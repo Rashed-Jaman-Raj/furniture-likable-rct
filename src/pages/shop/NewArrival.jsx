@@ -33,7 +33,7 @@ const NewArrival = ({ headline }) => {
         <h2 className="text-4xl font-bold text-center my-8">{headline}</h2>
 
         {/* products grid */}
-        <div className="px-12  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-screen-2x1 container">
+        <div className="px-12 sm:px-2  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-screen-2x1 container">
           {filteredProducts.slice(0, visibleProducts).map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}

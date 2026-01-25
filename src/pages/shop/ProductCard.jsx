@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="border border-gray-300 rounded-md hover:shadow-black/35 hover:shadow-lg duration-200 overflow-hidden">
       <Link to={`/product/${product.id}`}>
-        <div className="hover:scale-104 duration-200 cursor-pointer">
+        <div className="hover:scale-104 duration-200 cursor-pointer rounded-md">
           <img src={getImgUrl(`${product.imageUrl}`)} alt="" />
         </div>
       </Link>
